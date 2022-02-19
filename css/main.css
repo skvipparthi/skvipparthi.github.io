@@ -223,7 +223,11 @@ blockquote footer {
 
 #program {
   color: gray;
-  font-size: 1.875em;
+  text-align: center;
+}
+#program1 {
+  color: gray;
+  font-size: 0.875em;
   text-align: center;
 }
 
