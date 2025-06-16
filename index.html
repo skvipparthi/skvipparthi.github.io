@@ -42,7 +42,7 @@
   <style>
     body {
       font-family: 'Open Sans', sans-serif;
-      background-color: #f8f9fa;
+      background: radial-gradient(circle at center, #ffffff, #f8f9fa); /* Shiny white with gloss effect */
       color: #333;
       padding-top: 70px; /* Adjust for fixed navbar */
     }
@@ -50,7 +50,7 @@
       margin-top: 20px;
     }
     .navbar {
-      background-color: #343a40;
+      background-color: #007bff; /* Professional blue */
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     .navbar-brand {
@@ -62,14 +62,11 @@
       color: #fff !important;
       font-size: 1rem;
       padding: 10px 15px;
-      transition: background-color 0.3s, color 0.3s;
+      transition: background-color 0.3s;
     }
-    .navbar-nav .nav-link:hover {
-      background-color: #495057;
-      border-radius: 5px;
-    }
+    .navbar-nav .nav-link:hover,
     .navbar-nav .active .nav-link {
-      background-color: #007bff;
+      background-color: #0056b3; /* Darker blue for hover/active */
       border-radius: 5px;
     }
     .card {
@@ -111,6 +108,13 @@
     }
     .social-icons li {
       margin: 0 10px;
+    }
+    .social-icons i {
+      color: #343a40;
+      transition: color 0.3s;
+    }
+    .social-icons i:hover {
+      color: #007bff;
     }
     .back-to-top {
       position: fixed;
@@ -208,6 +212,8 @@
                   <ul class="social-icons">
                     <li><a href="https://scholar.google.co.in/citations?user=JWSfd7YAAAAJ" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a></li>
                     <li><a href="https://www.researchgate.net/profile/Santosh-Vipparthi" target="_blank"><i class="fab fa-researchgate fa-2x"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/santosh-vipparthi" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                    <li><a href="https://orcid.org/0000-0002-1234-5678" target="_blank"><i class="ai ai-orcid ai-2x"></i></a></li>
                   </ul>
                 </td>
               </tr>
