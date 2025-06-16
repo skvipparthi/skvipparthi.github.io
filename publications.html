@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Metadata for the Webpage -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dr. Santosh Kumar Vipparthi</title>
+  <title>Dr. Santosh Kumar Vipparthi - Publications</title>
 
-  <!-- Favicons -- We recommend this site for generating favicons: https://www.favicon-generator.org/ -->
+  <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
@@ -26,410 +24,523 @@
   <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <!-- Bootstrap CSS files-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-  <!-- jQuery UI CSS (optional) -->
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <!-- Google web fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous">
 
-  <!-- Font Awesome Web Icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Academicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css">
 
-  <!-- Academicons Courtesy of https://jpswalsh.github.io/academicons/ -->
-  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-
-  <!-- Local styles -->
-  <link rel="stylesheet" href="css/main.css">
-
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    #main-container {
+      margin-top: 20px;
+    }
+    .publication-card {
+      background: #fff;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      transition: box-shadow 0.3s;
+    }
+    .publication-card:hover {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .publication-card h5 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+    .publication-card .meta {
+      color: #6c757d;
+      font-size: 0.9rem;
+    }
+    .publication-card .badge {
+      font-size: 0.8rem;
+    }
+    .filter-btn {
+      margin: 5px;
+    }
+    .accordion .card {
+      border: none;
+      margin-bottom: 10px;
+    }
+    .accordion .card-header {
+      background: #343a40;
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .accordion .card-header h4 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #007bff;
+      color: #fff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      opacity: 0.7;
+    }
+    .back-to-top:hover {
+      opacity: 1;
+    }
+  </style>
 </head>
-
 <body>
-
-  <!-- navbar include -->
+  <!-- Navbar include -->
   <div id="navbar-include"></div>
 
-  <div class="spacer-div-3 hidden-xs hidden-xs"></div>
+  <div class="spacer-div-3 hidden-xs"></div>
 
-  <!-- Main content    -->
+  <!-- Main content -->
   <div id="main-container" class="container">
-
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-12">
         <h1>Publications</h1>
-        <p>More details about my research: <a href="https://visionintelligence.github.io/" target="blank">Please Visit</a> </p>
-<h4><b>(Year: 2025)</b></h4>
-<h5 style="color:black">
-<b>[C29] </b>
-	Priyanka Mishra, Nancy Mehta, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala "Uswformer: Efficient sparse wavelet transformer for underwater image enhancement" 
- </a> in <b>WACV-2025<b>, Tucson, AZ, USA, 2025. (Accepted) <b>(Core A)<b>.
-</h5>	
-					 <h5 style="color:black">
-<b>[C28] </b>
-	MD Raqib Khan, Anshul Negi, Ashutosh Kulkarni, Shruti S Phutke, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala "Phaseformer: Phase-based attention mechanism for underwater image restoration and beyond" 
- </a> in <b>WACV-2025<b>, Tucson, AZ, USA, 2025. (Accepted) <b>(Core A)<b>.
-</h5>	
-					 <h5 style="color:black">
-<b>[C27] </b>
-	Shahzad Ahmad, Sania Bano, Sachin Verma, Sukalpa Chanda, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala "TRUST: Time-Domain Residual Unsupervised Stability Technique for Improved Heart Rate Estimation" 
- </a> in <b>WACV-2025<b>, Tucson, AZ, USA, 2025. (Accepted) <b>(Core A)<b>.
-</h5>	
-					 <h5 style="color:black">
-<b>[C26] </b>
-	Shahzad Ahmad, Sania Bano, Sachin Verma, Yogesh Singh Rawat, Sukalpa Chanda, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala "PULSE: Physiological Understanding with Liquid Signal Extraction" 
- </a> in <b>CVPRw-2025<b>, Music City Center, Nashville, 2025. (Accepted) <b>(Core A)<b>.
-</h5>	
-<h5 style="color:black">
-<b>[C25] </b>
-	Arnim Gautam, Aditi Pawar, Aishwarya Joshi, Satya Narayan Tazi, Sachin Chaudhary, Praful Hambarde, Akshay Dudhane, <b>Santosh Kumar Vipparthi</b>, Subrahamanyam Murala "Pureformer: Transformer-Based Image Denoising" 
- </a> in <b>WACV-2025<b>, Tucson, AZ, USA, 2025. (Accepted) <b>(Core A)<b>.
-</h5>	
-<h5 style="color:black">
-<b>[C24] </b>
-	Siddharth Singh, Nancy Mehta, KN Prakash, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala "Probing Attention-Driven Normalizing Flow Network for Low-Light Image Enhancement" 
- </a> in <b>ICPR-2025<b>, 2025. (Accepted) <b>(Core B)<b>.
-</h5>
-<h5 style="color:black">
-<b>[C23] </b>
-	Adinath Dukre, Vivek Deshmukh, Ashutosh Kulkarni, Shruti Phutke, <b>Santosh Kumar Vipparthi</b>, Anil B Gonde, Subrahmanyam Murala "Frequency Modulated Deformable Transformer for Underwater Image Enhancement" 
- </a> in <b>ICPR-2025<b>, 2025. (Accepted) <b>(Core B)<b>.
-</h5>
-<h4><b>(Year: 2024)</b></h4>
-<h5 style="color:black">
-<h5 style="color:black">
-<b>[J27] </b>
-	Ashutosh Kulkarni, Shruti Phutke, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala "Multi-Medium Image Enhancement With Attentive Deformable Transformers" 
- </a> in <b>IEEE Transactions on Emerging Topics in Computational Intelligence<b>, <b>(IF: 5.3)<b>.
-<h5 style="color:black">
-<b>[J26] </b>
-	Praful Hambarde, Gourav Wadhwa, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala, Abhinav Dhall "Occlusion Boundary Prediction and Transformer Based Depth-Map Refinement From Single Image" 
- </a> in <b>ACM Transactions on Multimedia Computing, Communications and Applications<b>, <b>(IF: 5.2)<b>.
-					 <h5 style="color:black">
-<b>[C22] </b>
-	Ashutosh Kulkarni, Shruti Phutke, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala "C2AIR: Consolidated Compact Aerial Image Haze Removal" 
- </a> in <b>WACV-2024<b>, Waikoloa, Hawaii, USA, 2024. (Accepted) <b>(Core A)<b>.
-</h5>	
-					 <h5 style="color:black">
-<b>[C21] </b>
-	Raqib Khan, Priyanka Mishra, Nancy Mehta, Shruti Phutke, <b>Santosh Kumar Vipparthi</b>, Sukumar Nandi and Subrahmanyam Murala, "Spectroformer: Multi-Domain Query Cascaded Transformer Network For Underwater Image Enhancement"
- </a> in <b>WACV-2024<b>, Waikoloa, Hawaii, USA, 2024. (Accepted) <b>(Core A)<b>.
-</h5>	
-<h5 style="color:black">
-<b>[C20] </b>
-	Prem Shanker Yadav, Dinesh Kumar Tyagi, <b>Santosh Kumar Vipparthi</b>, "Fusing Image and Text Features for Scene Sentiment Analysis Using Whale-Honey Badger Optimization Algorithm (WHBOA)"
- </a> in <b>International Conference on Pattern Recognition (ICPR)-2024<b>, (Accepted) <b>(Core B)<b>.
-</h5>	
-<h5 style="color:black">
-<b>[C20] </b>
-	Prafulla Saxena, Dinesh Kumar Tyagi, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala, "WARMOS: Enhancing Weather-Affected Referred Moving Object Segmentation"
- </a> in <b>ACCV-2024<b>,2024. (Accepted) <b>(Core B)<b>.
-</h5>	
-					 <h5 style="color:black">
-<h4><b>(Year: 2023)</b></h4>
-<h5 style="color:black">
-<b>[C19] </b>
-	Monu Verma, Priyanka Lubal, <b>Santosh K. Vipparthi</b>, Mohamed Abdel-Mottaleb"RNAS-MER: A Refined Neural Architecture Search with Hybrid Spatiotemporal Operations for Micro-Expression Recognition"
- </a> in <b>WACV-2023<b>, Waikoloa, Hawaii, USA, 2023. (Accepted) <b>(Core A)<b>.
-</h5>	
-					 <h5 style="color:black">
-<b>[C18] </b>
-	Shruti Phutke, Ashutosh Kulkarni, <b>Santosh K. Vipparthi</b>, Subrahmanyam Murala "Blind Image Inpainting via Omni-Dimensional Gated Attention and Wavelet Queries"
- </a> in <b>CVPRw-2023<b>, Vancouver, Canada, 1251-1260, 2023.
-						 
-</h5>	
-					 <h5 style="color:black">
-			 
-<h4><b>(Year: 2022)</b></h4>
-<h5 style="color:black">
-<b>[J25] </b> 
-	Monu Verma, <b>Santosh Kumar Vipparthi</b>, Girdhari Singh
-<a href="10.1007/s11042-021-11623-3" target="_blank"> "Deep Insights of Learning based Micro Expression Recognition: A Perspective on Promises, Challenges and Research Needs," 
-</a>  IEEE Transactions on Cognitive and Developmental Systems, 2022</a>
-						    <h5 style="color:black">
-<b>[J24] </b> 
-	Murari Mandal, Yashwanth Reddy Meedimale, M Satish Kumar Reddy, <b>Santosh Kumar Vipparthi</b>, 
-<a href="10.1007/s11042-021-11623-3" target="_blank"> "Neural Architecture Search for Image Dehazing," 
-</a>  IEEE Transactions on Artificial Intelligence, 2022</a>
-						    <h5 style="color:black">
-<b>[J23] </b> 
-	Anamika Satrawala, Arka Prokash Mazumdar, <b>Santosh Kumar Vipparthi</b>, 
-<a href="10.1007/s11042-021-11623-3" target="_blank"> "A Multilane Traffic and Collision Generator for IoV," 
-</a>  Simulation Modelling Practice and Theory, 2022</a>
-						    <h5 style="color:black">
-<b>[J22] </b> 
-	Gopa Bhaumik, Monu Verma, Mahesh Chandra Govil, <b>Santosh Kumar Vipparthi</b>, 
-<a href="10.1007/s11042-021-11623-3" target="_blank"> "HyFiNet: Hybrid feature attention network for hand gesture recognition," 
-</a>  Multimedia Tools and Applications, 2022 </a>
-							    <h5 style="color:black">
-<b>[C17] </b>
-	Prafulla Saxena, Kuldeep Biradar, Dinesh Kumar Tyagi, <b>Santosh K. Vipparthi</b>, "RIChEx: A Robust Inter-Frame Change Exposure for Segmenting Moving Objects"
- </a> in 29th international conference on image processing <b>(ICIP-2022) (Core B)<b>.
-</h5>	
-					 <h5 style="color:black">
-<b>[C16] </b>
-	Deepti Sharma, Kuldeep M. Biradar, <b>Santosh K. Vipparthi</b>, Ramesh Babu Battula, "HYPE: CNN Based HYbrid PrEcoding Framework for 5G and Beyond,"
- </a> in The 36thInternational Conference on Advanced Information Networking and Applications <b>(AINA-2022) (Core B)<b>.
-						<h5 style="color:black">
-<h4><b>(Year: 2021)</b></h4>
-<h5 style="color:black">
-<b>[J21] </b> 
-Monu Verma, M. Satish Kumar Reddy, Yashwanth Reddy Meedimale, Murari Mandal, Santosh Kumar Vipparthi, 
-<a href="10.1109/TNNLS.2021.3072290" target="_blank"> "AutoMER: Spatiotemporal Neural Architecture Search for Microexpression Recognition," 
-</a> IEEE Transactions on Neural Networks and Learning Systems, 2021 </a>
-<h5 style="color:black">
-<b>[J20] </b> 
-Murari Mandal, <b>Santosh Kumar Vipparthi</b>, <a href="#"target="_blank"> 
-	“An Empirical Review of Deep Learning Frameworks for Change Detection: Model Design, Experimental Frameworks, Challenges and Research Needs,” </a>
-	IEEE Transactions on Intelligent Transportation System, 2021, 		
-</h5>
-<h5 style="color:black">
-<b>[J19] </b> 
-Gopa Bhaumik, Monu Verma, Mahesh Chandra Govil, <b>Santosh Kumar Vipparthi</b>, <a href="#"target="_blank"> 
-	“ ExtriDeNet: an intensive feature extrication deep network for hand gesture recognition,” </a>The Visual Computer, 2021, </h5>
-						    <h5 style="color:black">
-<b>[J18] </b> 
- Monika Choudhary, Satyendra Singh Chouhan, Emmanuel S. Pilli, <b>Santosh Kumar Vipparthi</b>, <a href="#"target="_blank">
-	“ BerConvoNet: A deep learning framework for fake news classification,” </a>Applied Soft Computing, 2021,	
-</h5>
-	<h5 style="color:black">	
-<b>[C15] </b>
-	Monu Verma, Ayushi Gupta,<b>Santosh Kumar Vipparthi</b>, "One for All: An End-to-End Compact Solution for Hand Gesture Recognition,"
- </a> in International Joint Conference on Neural Networks <b>(IJCNN)<b>, 2021 <b>(Core B)<b>.
-</h5>
-	<h5 style="color:black">
+        <p>More details about my research: <a href="https://visionintelligence.github.io/" target="_blank">Please Visit</a></p>
 
- 						<h5 style="color:black">                               
- <h4><b>(Year: 2020)</b></h4>
-<h5 style="color:black">
-<b>[J17] </b>
-Murari Mandal, Vansh Dhar, Abhishek Mishra, <b>Santosh Kumar Vipparthi</b>, Mohamed Abdel-Mottaleb, <a href="#"target="_blank">
-	“3DCD: A Scene Independent End-to-End Spatiotemporal Feature Learning Framework for Change Detection in Unseen Videos,” </a>IEEE Transactions on Image Processing, 2020, <b>(<a href="#"target="_blank">PDF</a>)</b>		
-</h5>		
+        <!-- Filter Buttons -->
+        <div class="mb-4">
+          <button class="btn btn-primary filter-btn" data-filter="all">All</button>
+          <button class="btn btn-secondary filter-btn" data-filter="journal">Journals</button>
+          <button class="btn btn-secondary filter-btn" data-filter="conference">Conferences</button>
+        </div>
 
-<h5 style="color:black">
-<b>[J16] </b>
-Murari Mandal, <b>Santosh Kumar Vipparthi</b>, <a href="#"target="_blank">“Scene Independency Matters: An Empirical Study of Scene Dependent and Scene Independent Evaluation for CNN-Based Change Detection,” </a>IEEE Transactions on Intelligent Transportation System, 2020, <b>(<a href="https://ieeexplore.ieee.org/document/9238403"target="_blank">PDF</a>)</b> 		
-</h5>	
-					    
-<h5 style="color:black">
-<b>[J15] </b>
-Monu Verma, <b>Santosh Kumar Vipparthi</b>, Girdhari singh, <a href="#"target="_blank">“AffectiveNet: Affective-Motion Feature Learning for Micro Expression Recognition,” </a> IEEE MultiMedia, 2020. <b>(<a href="#"target="_blank">PDF</a>)</b>		
-</h5>					    
-
-<h5 style="color:black">
-<b>[J14] </b>
-Monu Verma,<b> Santosh Kumar Vipparthi</b>, Girdhari Singh, Subrahmanyam Murala,<a href="https://ieeexplore.ieee.org/document/8844867/"target="_blank"> “LEARNet:
-Dynamic Imaging Network for Micro Expression Recognition,” </a>IEEE Transactions on image
-processing, vol. 29, pp. 1618-1627, 2019, <b>(<a href="https://ieeexplore.ieee.org/document/8844867/"target="_blank">PDF</a>)</b>, </h5>
-
-<h5 style="color:black">					    
-<b>[C14] </b>
-
-	Murari Mandal, Lav Kush Kumar, <b>Santosh Kumar Vipparthi</b>, <a href="https://dl.acm.org/doi/10.1145/3394171.3413934"target="_blank">“MOR-UAV: A Benchmark Dataset and Baselines 
-for Moving Object Recognition in UAV Videos,” </a> ACM International Conference on Multimedia <b>(ACMMM)<b>, <b>(Core A*)<b>Seattle, United States, 2020,  <b>(<a href="https://dl.acm.org/doi/10.1145/3394171.3413934"target="_blank">PDF</a>)</b>.
-</h5>
-<h5 style="color:black">					    
-<b>[C13] </b>					
-Murari Mandal, Lav Kush Kumar, Mahipal Singh Saran, <b>Santosh Kumar Vipparthi</b>, <a href="http://openaccess.thecvf.com/content_WACV_2020/html/Mandal_MotionRec_A_Unified_Deep_Framework_for_Moving_Object_Recognition_WACV_2020_paper.html"target="_blank">“MotionRec: A Unified Deep Framework for Moving Object 
-Recognition,”</a> IEEE Winter Conference on Applications of Computer Vision <b>(WACV)<b>, <b>(Core A)<b> Snowmass Village, Colorado, US, 2020, <b>(<a href="http://openaccess.thecvf.com/content_WACV_2020/html/Mandal_MotionRec_A_Unified_Deep_Framework_for_Moving_Object_Recognition_WACV_2020_paper.html"target="_blank">PDF</a>)</b>.
-					    
-</h5> 
-<h5 style="color:black">					    
-<b>[C12] </b>
-Monu Verma, <b>Santosh Kumar Vipparthi</b>, Girdhari singh, <a href="https://arxiv.org/ftp/arxiv/papers/2005/2005.07991.pdf"target="_blank">“Non-Linearities Improve OrigiNet based on Active Imaging for Micro Expression 
-	Recognition,” </a>IEEE International Joint Conference on Neural Networks <b>(IJCNN) (Core B)<b>,  Glasgow, United Kingdom, 2020, <b>(<a href="#"target="_blank">PDF</a>)</b>.
-					    
-</h5>
-<h5 style="color:black">					    
-<b>[C11] </b>
-Gopa Bhomik, Monu Verma, M. C. Govil, <b>Santosh Kumar Vipparthi</b>, <a href="#"target="_blank">“EXTRA: An extended radial mean response pattern
-for hand gesture recognition,” </a>ICCSP,  Madras, INDIA, 2020, <b>(<a href="#"target="_blank">PDF</a>)</b>.
-					    
-</h5>
-		<h5 style="color:black">
-						<h5 style="color:black">						    
-<h4><b>(Year: 2019)</b></h4>                                   
-<h5 style="color:black">
-<b>[J13] </b>
-Murari Mandal, Vansh Dhar, Abhishek Mishra, <b> Santosh Kumar Vipparthi</b>, <a href="https://ieeexplore.ieee.org/document/8894435"target="_blank"> “3DFR: A Swift 3D Feature Reductionist Framework for Scene 
-Independent Change Detection,” </a> IEEE Signal Processing Letters, vol. 26, no. 12, pp. 1882-1886, 2019, <b>(<a href="https://ieeexplore.ieee.org/document/8894435"target="_blank">PDF</a>)</b>, </h5>
-					    				    
-<h5 style="color:black">
-<b>[J12] </b>
-Murari Mandal, Manal Shah, Prashant Meena, Sanhita Devi, <b>Santosh Kumar Vipparthi</b>,
-<a href="https://ieeexplore.ieee.org/document/8755462/"target="_blank">“AVDNet: A SmallSized Vehicle Detection Network for Aerial Visual Data,” </a>IEEE Geoscience
-and Remote Sensing Letters, 2019, <b>(<a href="https://ieeexplore.ieee.org/document/8755462/"target="_blank">PDF</a>)</b>, </h5>
-
-<h5 style="color:black">
-
-<b>[J11] </b>	
-    Murari Mandal, Monu Verma, Sonakshi Mathur, <b>Santosh Vipparthi</b>, Subrahmanyam Murala, Kranthi Deveerasetty, 
-	<a href="https://digital-library.theiet.org/content/journals/10.1049/iet-ipr.2018.5683"target="_blank">"RADAP: Regional Adaptive Affinitive Patterns with 
-	Logical Operators for Facial Expression Recognition,"</a> IEEE/IET Image Processing, 2019, <b>(<a href="https://digital-library.theiet.org/content/journals/10.1049/iet-ipr.2018.5683"target="_blank">PDF</a>)</b>,
-     </h5> 
-					    
-<h5 style="color:black">
-<b>[J10] </b>Monu Verma, <b>Santosh Kumar Vipprathi</b>, Girdhari Singh,
-	<a href="https://ieeexplore.ieee.org/document/8766893"target="_blank">"HiNet: Hybrid Inherited Feature Learning Network for Facial Expression Recognition
-	,"</a>  IEEE Letters of the Computer Society, 2019, <b>(<a href="https://ieeexplore.ieee.org/document/8766893"target="_blank">PDF</a>)</b>, </h5>
-					    
-<h5 style="color:black">
-	<b>[J9] </b>Maheep Singh, Mahesh C. Govil, Emmanuel S. Pilli, <b>Santosh Kumar Vipparthi</b>,
-	<a href="https://ieeexplore.ieee.org/document/8863240"target="_blank">"SOD-CED: salient object detection for noisy images using convolution encoder–decoder
-	,"</a> IEEE/IET Computer Vision, 2019, <b>(<a href="https://ieeexplore.ieee.org/document/8863240"target="_blank">PDF</a>)</b>, </h5>
-	
-<h5 style="color:black">	
-<b>[C10] </b>
-Murari Mandal, Manal Shah, Prashant Meena, <b>Santosh Kumar Vipparthi</b>, <a href="https://ieeexplore.ieee.org/document/8803262"target="_blank">“SSSDet: Simple
-Short and Shallow Network for Resource Efficient Vehicle Detection in Aerial Scenes,”</a> IEEE 26th International
-Conference on Image Processing <b>(ICIP) (Core B)<b>, Taipei, Taiwan, 2019, <b>(<a href="https://ieeexplore.ieee.org/document/8803262"target="_blank">PDF</a>)</b>.
-
-</h5>
-											
-<h5 style="color:black">	
-<b>[C9] </b>
-Kuldeep Marotirao Biradar, Ayushi Gupta, Murari Mandal, <b>Santosh Kumar Vipparthi</b>,<a href="http://openaccess.thecvf.com/content_CVPRW_2019/papers/AI%20City/Biradar_Challenges_in_Time-Stamp_Aware_Anomaly_Detection_in_Traffic_Videos_CVPRW_2019_paper.pdf"target="_blank">
-"Challenges in Time-Stamp Aware Anomaly Detection in Traffic Videos," 
-</a> In CVPR Workshops <b>(CVPRW)<b>, Long Beach, California, US, 2019, <b>(<a href="http://openaccess.thecvf.com/content_CVPRW_2019/papers/AI%20City/Biradar_Challenges_in_Time-Stamp_Aware_Anomaly_Detection_in_Traffic_Videos_CVPRW_2019_paper.pdf"target="_blank">PDF</a>)</b>.
-
-</h5>
-<h5 style="color:black">	
-<b>[C8] </b>
-Monu Verma, Prafulla saxena, <b>Santosh Kumar Vipparthi</b>, Girdhari Singh, S. K. Nagar, <a href="https://www.researchgate.net/publication/337387469_DeFINet_PORTABLE_CNN_NETWORK_FOR_FACIAL_EXPRESSION_RECOGNITION"target="_blank">
-										"DeFINet: PORTABLE CNN NETWORK FOR FACIAL EXPRESSION RECOGNITION," 
-										</a> IEEE International Conference on Information and Communication Technology for Competitive Strategies, Udaipur, INDIA,  2019, 
-	<b>(<a href="https://www.researchgate.net/publication/337387469_DeFINet_PORTABLE_CNN_NETWORK_FOR_FACIAL_EXPRESSION_RECOGNITION"target="_blank">PDF</a>)</b>.
-
-</h5>
-
-<h5 style="color:black">	
-<b>[C7] </b>
-Shivangi Dwivedi, Murari Mandal, Shekhar Yadav, <b>Santosh Kumar Vipparthi</b> <a href="https://link.springer.com/content/pdf/10.1007/978-981-15-4018-9_32.pdf"target="_blank">
-"3D CNN with Localized Residual Connections for Hyperspectral Image Classification," 
-</a> IEEE International Conference on Computer Vision and Image Processing (CVIP), jaipur, India, 2019, 
-<b>(<a href="https://link.springer.com/content/pdf/10.1007/978-981-15-4018-9_32.pdf"target="_blank">PDF</a>)</b>.
-</h5>
-			<h5 style="color:black">
-										<h5 style="color:black">
-<h4><b>(Year: 2018)</b></h4>
-<h5 style="color:black">	
-	<b>[J8] </b>Murari Mandal,<b> Santosh Kumar Vipparthi</b>, Mallika Chaudhary, Subramanian Murala, Anil Balaji Gonde,
-	S. K. Nagar,<a href="https://digital-library.theiet.org/content/journals/10.1049/iet-cvi.2018.5206"target="_blank"> "ANTIC: ANTithetic Isomeric Cluster Patterns for Medical Image Retrieval and Change Detection,"
-	</a> IEEE/IET Computer Vision, 2018, <b>(<a href="https://digital-library.theiet.org/content/journals/10.1049/iet-cvi.2018.5206"target="_blank">PDF</a>)</b>, 
-</h5>
-<h5 style="color:black">	
-	<b>[C6] </b>Murari Mandal, Prafulla Saxena, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala, 
-	<a href="https://ieeexplore.ieee.org/document/8545504"target="_blank">"CANDID: Robust Change Dynamics and Deterministic Update Policy for Dynamic Background Subtraction," 
-	</a> IEEE 24th International Conference on Pattern Recognition <b>(ICPR) (Core B)<b>, Beijing, China, 2018, <b>(<a href="https://ieeexplore.ieee.org/document/8545504"target="_blank">PDF</a>)</b>.
-
-</h5>
-<h5 style="color:black">	
-<b>[C5] </b>Monu Verma, Prafulla Saxena, <b>Santosh Kumar Vipparthi</b>, Gridhari Singh, 
-<a href="https://ieeexplore.ieee.org/abstract/document/8616256"target="_blank">"QUEST: Quadriletral Senary bit Pattern for Facial Expression Recognition,"</a>
- IEEE International Conference on Systems, Man, and Cybernatics <b>(SMC) (Core B)<b>, Miyazaki, Japan, 2018, <b>(<a href="https://ieeexplore.ieee.org/abstract/document/8616256"target="_blank">PDF</a>)</b>.
-
-	
-</h5>
-<h5 style="color:black">	
-<b>[C4] </b>Monu Verma, Jaspreet Kaur Bhui, <b>Santosh Kumar Vipparthi</b>,
- Girdhari Singh, <a href="https://arxiv.org/abs/1904.06658"target="_blank">"EXPERTNet: Exigent Features Preservative Network for Facial 
- Expression Recogntion,"</a> ACM 11th International Conference on Computer Vision, Graphics and
- Image Processing (ICVGIP), Hyderabad, India, 2018, <b>(<a href="https://arxiv.org/abs/1904.06658"target="_blank">PDF</a>)</b>.
-
-
-</h5>
-
-<h5 style="color:black">	
-<b>[C3] </b>Monu Verma,<b> Santosh Kumar Vipparthi</b>, Girdhari Singh, <a href="https://arxiv.org/abs/1811.10261"target="_blank">"Region Based Extensive Response
- Index Pattern for Facial Expression Recognition,"</a> IEEE International Conference on Communication, 
- Computing and Internet of Things, 2018, <b>(<a href="https://arxiv.org/abs/1811.10261"target="_blank">PDF</a>)</b>.
-</h5>
-							<h5 style="color:black">
-<h4><b>(Year: 2017)</b></h4>
-<h5 style="color:black">	
-<b>[C2] </b>Sonakshi Mathur, Mallika Chaudhary, 
-Hemant Verma, Murari Mandal, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala,
- <a href="https://ieeexplore.ieee.org/document/8487542/"target="_blank">"Multichannel Distributed Local Pattern for Content Based Indexing and Retrieval,"
- </a> 14th IEEE India Council International Conference (INDICON), Roorkee, 2017, <b>(<a href="https://ieeexplore.ieee.org/document/8487542/"target="_blank">PDF</a>)</b>.
-</h5>
-						<h5 style="color:black">								
-<h4><b>(Year: 2016)</b></h4>
-<h5 style="color:black">	
-<b>[J7] </b><b>Santosh Kumar Vipparthi</b>, Subramanian Murala, Anil Balaji Gonde, Q. M.
- Jonathan Wu,<a href="https://digital-library.theiet.org/content/journals/10.1049/iet-cvi.2015.0035"target="_blank">"Local Directional Mask Maximum Edge Patterns for Image Retrieval 
- and Face Recognition,"</a> IEEE/IET Computer Vision, 2016, <b>(<a href="https://digital-library.theiet.org/content/journals/10.1049/iet-cvi.2015.0035"target="_blank">PDF</a>)</b>, </h5>
-<h5 style="color:black">	
-<b>[C1] </b>Anil Balaji Gonde, Subrahmanyam Murala,<b> Santosh Kumar Vipparthi</b>, Rudra Prakash Maheshwari,
- R Balasubramanian, <a href="https://link.springer.com/chapter/10.1007/978-981-10-2107-7_45"target="_blank">"3D Local Transform Patterns: A New Feature Descriptor for Image Retrieval,"
- </a> International Conference on Computer Vision and Image Processing (CVIP), Roorkee, 2016, <b>(<a href="https://link.springer.com/chapter/10.1007/978-981-10-2107-7_45"target="_blank">PDF</a>)</b>.	
-	<h5 style="color:black">
-						<h5 style="color:black">
-<h4><b>(Year: 2014)</b></h4>
-<h5 style="color:black">	
-<b>[J6] </b><b>Santosh Kumar Vipparthi</b>, S. K. Nagar,<a href="https://www.sciencedirect.com/science/article/pii/S0957417414003935"target="_blank">"Expert Image Retrieval system using Directional
- Local Motif XOR Patterns,"</a> Expert Systems with Applications, Elsevier, 2014, <b>(<a href="https://www.sciencedirect.com/science/article/pii/S0957417414003935"target="_blank">PDF</a>)</b>, </h5>
-					    
-<h5 style="color:black">	
-<b>[J5] </b><b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala, S. K. Nagar and A. B. Gonde 
-<a href="https://www.sciencedirect.com/science/article/pii/S0925231215005317"target="_blank">"Local Gabor Maximum Edge Position
- Octal Patterns for Image Indexing and Retrieval,"</a> Neurocomputing, Elsevier, 2014, <b>(<a href="https://www.sciencedirect.com/science/article/pii/S0925231215005317"target="_blank">PDF</a>)</b>, </h5>
-					    
-<h5 style="color:black">	
-<b>[J4] </b><b>Santosh Kumar Vipparthi</b>, S. K. Nagar, <a href="https://www.sciencedirect.com/science/article/pii/S0045790614001232"target="_blank">"Multi-joint histogram based modelling 
- for image indexing and retrieval, "</a> Computers & Electrical Engineering, Elsevier, 2014, <b>(<a href="https://www.sciencedirect.com/science/article/pii/S0045790614001232"target="_blank">PDF</a>)</b>, </h5>
-
-<h5 style="color:black">	
-<b>[J3] </b><b>Santosh Kumar Vipparthi</b>, S. K. Nagar, <a href="https://www.sciencedirect.com/science/article/pii/S003040261500217X"target="_blank">"Dual directional Multi-Motif XOR Patterns: 
-A new Descriptor for Image Indexing and Retrieval,”</a> International Journal for Light and Electron Optics, Elsevier,<b>(<a href="https://www.sciencedirect.com/science/article/pii/S003040261500217X"target="_blank">PDF</a>)</b>,  </h5>
-					    
-<h5 style="color:black">	
-<b>[J2] </b><b>Santosh Kumar Vipparthi</b>, S. K. Nagar <a href="https://hcis-journal.springeropen.com/articles/10.1186/s13673-014-0006-x"target="_blank">“Colored Directional Local Quinary Patterns for Multimedia Image Indexing and Retrieval”, 
-</a> Human-centric Computing and Information Sciences, Springer, 2014, <b>(<a href="https://hcis-journal.springeropen.com/articles/10.1186/s13673-014-0006-x"target="_blank">PDF</a>)</b>, </h5>
-					    
-<h5 style="color:black">	
-<b>[J1] </b><b>Santosh Kumar Vipparthi</b>, S. K. Nagar,<a href="https://link.springer.com/article/10.1007/s40031-014-0153-5"target="_blank"> "Integration of Color and Local Derivative
- Pattern Features for Content-Based Image Indexing and Retrieval, ”</a> Journal of the Institution of Engineers (India): Series B, Springer, 2014, <b>(<a href="https://link.springer.com/article/10.1007/s40031-014-0153-5"target="_blank">PDF</a>)</b>.</h5>
-       </div>
+        <!-- Accordion for Publications -->
+        <div class="accordion" id="publicationsAccordion">
+          <!-- Year 2025 -->
+          <div class="card">
+            <div class="card-header" id="heading2025">
+              <h4 data-toggle="collapse" data-target="#collapse2025" aria-expanded="true" aria-controls="collapse2025">
+                2025
+              </h4>
+            </div>
+            <div id="collapse2025" class="collapse show" aria-labelledby="heading2025" data-parent="#publicationsAccordion">
+              <div class="card-body">
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C29]</b> Priyanka Mishra, Nancy Mehta, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala</h5>
+                  <p>"Uswformer: Efficient sparse wavelet transformer for underwater image enhancement" in <b>WACV-2025</b>, Tucson, AZ, USA, 2025. (Accepted) <span class="badge badge-success">Core A</span></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C28]</b> MD Raqib Khan, Anshul Negi, Ashutosh Kulkarni, Shruti S Phutke, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala</h5>
+                  <p>"Phaseformer: Phase-based attention mechanism for underwater image restoration and beyond" in <b>WACV-2025</b>, Tucson, AZ, USA, 2025. (Accepted) <span class="badge badge-success">Core A</span></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C27]</b> Shahzad Ahmad, Sania Bano, Sachin Verma, Sukalpa Chanda, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala</h5>
+                  <p>"TRUST: Time-Domain Residual Unsupervised Stability Technique for Improved Heart Rate Estimation" in <b>WACV-2025</b>, Tucson, AZ, USA, 2025. (Accepted) <span class="badge badge-success">Core A</span></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C26]</b> Shahzad Ahmad, Sania Bano, Sachin Verma, Yogesh Singh Rawat, Sukalpa Chanda, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala</h5>
+                  <p>"PULSE: Physiological Understanding with Liquid Signal Extraction" in <b>CVPRw-2025</b>, Music City Center, Nashville, 2025. (Accepted) <span class="badge badge-success">Core A</span></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C25]</b> Arnim Gautam, Aditi Pawar, Aishwarya Joshi, Satya Narayan Tazi, Sachin Chaudhary, Praful Hambarde, Akshay Dudhane, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala</h5>
+                  <p>"Pureformer: Transformer-Based Image Denoising" in <b>WACV-2025</b>, Tucson, AZ, USA, 2025. (Accepted) <span class="badge badge-success">Core A</span></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C24]</b> Siddharth Singh, Nancy Mehta, KN Prakash, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala</h5>
+                  <p>"Probing Attention-Driven Normalizing Flow Network for Low-Light Image Enhancement" in <b>ICPR-2025</b>, 2025. (Accepted) <span class="badge badge-info">Core B</span></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C23]</b> Adinath Dukre, Vivek Deshmukh, Ashutosh Kulkarni, Shruti Phutke, <b>Santosh Kumar Vipparthi</b>, Anil B Gonde, Subrahmanyam Murala</h5>
+                  <p>"Frequency Modulated Deformable Transformer for Underwater Image Enhancement" in <b>ICPR-2025</b>, 2025. (Accepted) <span class="badge badge-info">Core B</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Year 2024 -->
+          <div class="card">
+            <div class="card-header" id="heading2024">
+              <h4 data-toggle="collapse" data-target="#collapse2024" aria-expanded="false" aria-controls="collapse2024">
+                2024
+              </h4>
+            </div>
+            <div id="collapse2024" class="collapse" aria-labelledby="heading2024" data-parent="#publicationsAccordion">
+              <div class="card-body">
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J27]</b> Ashutosh Kulkarni, Shruti Phutke, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala</h5>
+                  <p>"Multi-Medium Image Enhancement With Attentive Deformable Transformers" in <b>IEEE Transactions on Emerging Topics in Computational Intelligence</b> <span class="badge badge-warning">IF: 5.3</span></p>
+                </div>
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J26]</b> Praful Hambarde, Gourav Wadhwa, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala, Abhinav Dhall</h5>
+                  <p>"Occlusion Boundary Prediction and Transformer Based Depth-Map Refinement From Single Image" in <b>ACM Transactions on Multimedia Computing, Communications and Applications</b> <span class="badge badge-warning">IF: 5.2</span></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C22]</b> Ashutosh Kulkarni, Shruti Phutke, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala</h5>
+                  <p>"C2AIR: Consolidated Compact Aerial Image Haze Removal" in <b>WACV-2024</b>, Waikoloa, Hawaii, USA, 2024. (Accepted) <span class="badge badge-success">Core A</span></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C21]</b> Raqib Khan, Priyanka Mishra, Nancy Mehta, Shruti Phutke, <b>Santosh Kumar Vipparthi</b>, Sukumar Nandi, Subrahmanyam Murala</h5>
+                  <p>"Spectroformer: Multi-Domain Query Cascaded Transformer Network For Underwater Image Enhancement" in <b>WACV-2024</b>, Waikoloa, Hawaii, USA, 2024. (Accepted) <span class="badge badge-success">Core A</span></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C20]</b> Prem Shanker Yadav, Dinesh Kumar Tyagi, <b>Santosh Kumar Vipparthi</b></h5>
+                  <p>"Fusing Image and Text Features for Scene Sentiment Analysis Using Whale-Honey Badger Optimization Algorithm (WHBOA)" in <b>ICPR-2024</b>, 2024. (Accepted) <span class="badge badge-info">Core B</span></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C20]</b> Prafulla Saxena, Dinesh Kumar Tyagi, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala</h5>
+                  <p>"WARMOS: Enhancing Weather-Affected Referred Moving Object Segmentation" in <b>ACCV-2024</b>, 2024. (Accepted) <span class="badge badge-info">Core B</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Year 2023 -->
+          <div class="card">
+            <div class="card-header" id="heading2023">
+              <h4 data-toggle="collapse" data-target="#collapse2023" aria-expanded="false" aria-controls="collapse2023">
+                2023
+              </h4>
+            </div>
+            <div id="collapse2023" class="collapse" aria-labelledby="heading2023" data-parent="#publicationsAccordion">
+              <div class="card-body">
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C19]</b> Monu Verma, Priyanka Lubal, <b>Santosh K. Vipparthi</b>, Mohamed Abdel-Mottaleb</h5>
+                  <p>"RNAS-MER: A Refined Neural Architecture Search with Hybrid Spatiotemporal Operations for Micro-Expression Recognition" in <b>WACV-2023</b>, Waikoloa, Hawaii, USA, 2023. (Accepted) <span class="badge badge-success">Core A</span></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C18]</b> Shruti Phutke, Ashutosh Kulkarni, <b>Santosh K. Vipparthi</b>, Subrahmanyam Murala</h5>
+                  <p>"Blind Image Inpainting via Omni-Dimensional Gated Attention and Wavelet Queries" in <b>CVPRw-2023</b>, Vancouver, Canada, 1251-1260, 2023.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Year 2022 -->
+          <div class="card">
+            <div class="card-header" id="heading2022">
+              <h4 data-toggle="collapse" data-target="#collapse2022" aria-expanded="false" aria-controls="collapse2022">
+                2022
+              </h4>
+            </div>
+            <div id="collapse2022" class="collapse" aria-labelledby="heading2022" data-parent="#publicationsAccordion">
+              <div class="card-body">
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J25]</b> Monu Verma, <b>Santosh Kumar Vipparthi</b>, Girdhari Singh</h5>
+                  <p><a href="10.1007/s11042-021-11623-3" target="_blank">"Deep Insights of Learning based Micro Expression Recognition: A Perspective on Promises, Challenges and Research Needs"</a>, IEEE Transactions on Cognitive and Developmental Systems, 2022</p>
+                </div>
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J24]</b> Murari Mandal, Yashwanth Reddy Meedimale, M Satish Kumar Reddy, <b>Santosh Kumar Vipparthi</b></h5>
+                  <p><a href="10.1007/s11042-021-11623-3" target="_blank">"Neural Architecture Search for Image Dehazing"</a>, IEEE Transactions on Artificial Intelligence, 2022</p>
+                </div>
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J23]</b> Anamika Satrawala, Arka Prokash Mazumdar, <b>Santosh Kumar Vipparthi</b></h5>
+                  <p><a href="10.1007/s11042-021-11623-3" target="_blank">"A Multilane Traffic and Collision Generator for IoV"</a>, Simulation Modelling Practice and Theory, 2022</p>
+                </div>
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J22]</b> Gopa Bhaumik, Monu Verma, Mahesh Chandra Govil, <b>Santosh Kumar Vipparthi</b></h5>
+                  <p><a href="10.1007/s11042-021-11623-3" target="_blank">"HyFiNet: Hybrid feature attention network for hand gesture recognition"</a>, Multimedia Tools and Applications, 2022</p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C17]</b> Prafulla Saxena, Kuldeep Biradar, Dinesh Kumar Tyagi, <b>Santosh K. Vipparthi</b></h5>
+                  <p>"RIChEx: A Robust Inter-Frame Change Exposure for Segmenting Moving Objects" in <b>ICIP-2022</b> <span class="badge badge-info">Core B</span></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C16]</b> Deepti Sharma, Kuldeep M. Biradar, <b>Santosh K. Vipparthi</b>, Ramesh Babu Battula</h5>
+                  <p>"HYPE: CNN Based HYbrid PrEcoding Framework for 5G and Beyond" in <b>AINA-2022</b> <span class="badge badge-info">Core B</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Year 2021 -->
+          <div class="card">
+            <div class="card-header" id="heading2021">
+              <h4 data-toggle="collapse" data-target="#collapse2021" aria-expanded="false" aria-controls="collapse2021">
+                2021
+              </h4>
+            </div>
+            <div id="collapse2021" class="collapse" aria-labelledby="heading2021" data-parent="#publicationsAccordion">
+              <div class="card-body">
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J21]</b> Monu Verma, M. Satish Kumar Reddy, Yashwanth Reddy Meedimale, Murari Mandal, <b>Santosh Kumar Vipparthi</b></h5>
+                  <p><a href="10.1109/TNNLS.2021.3072290" target="_blank">"AutoMER: Spatiotemporal Neural Architecture Search for Microexpression Recognition"</a>, IEEE Transactions on Neural Networks and Learning Systems, 2021</p>
+                </div>
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J20]</b> Murari Mandal, <b>Santosh Kumar Vipparthi</b></h5>
+                  <p><a href="#" target="_blank">"An Empirical Review of Deep Learning Frameworks for Change Detection: Model Design, Experimental Frameworks, Challenges and Research Needs"</a>, IEEE Transactions on Intelligent Transportation System, 2021</p>
+                </div>
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J19]</b> Gopa Bhaumik, Monu Verma, Mahesh Chandra Govil, <b>Santosh Kumar Vipparthi</b></h5>
+                  <p><a href="#" target="_blank">"ExtriDeNet: an intensive feature extrication deep network for hand gesture recognition"</a>, The Visual Computer, 2021</p>
+                </div>
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J18]</b> Monika Choudhary, Satyendra Singh Chouhan, Emmanuel S. Pilli, <b>Santosh Kumar Vipparthi</b></h5>
+                  <p><a href="#" target="_blank">"BerConvoNet: A deep learning framework for fake news classification"</a>, Applied Soft Computing, 2021</p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C15]</b> Monu Verma, Ayushi Gupta, <b>Santosh Kumar Vipparthi</b></h5>
+                  <p>"One for All: An End-to-End Compact Solution for Hand Gesture Recognition" in <b>IJCNN-2021</b> <span class="badge badge-info">Core B</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Year 2020 -->
+          <div class="card">
+            <div class="card-header" id="heading2020">
+              <h4 data-toggle="collapse" data-target="#collapse2020" aria-expanded="false" aria-controls="collapse2020">
+                2020
+              </h4>
+            </div>
+            <div id="collapse2020" class="collapse" aria-labelledby="heading2020" data-parent="#publicationsAccordion">
+              <div class="card-body">
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J17]</b> Murari Mandal, Vansh Dhar, Abhishek Mishra, <b>Santosh Kumar Vipparthi</b>, Mohamed Abdel-Mottaleb</h5>
+                  <p><a href="#" target="_blank">"3DCD: A Scene Independent End-to-End Spatiotemporal Feature Learning Framework for Change Detection in Unseen Videos"</a>, IEEE Transactions on Image Processing, 2020 <b>(<a href="#" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J16]</b> Murari Mandal, <b>Santosh Kumar Vipparthi</b></h5>
+                  <p><a href="https://ieeexplore.ieee.org/document/9238403" target="_blank">"Scene Independency Matters: An Empirical Study of Scene Dependent and Scene Independent Evaluation for CNN-Based Change Detection"</a>, IEEE Transactions on Intelligent Transportation System, 2020 <b>(<a href="https://ieeexplore.ieee.org/document/9238403" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J15]</b> Monu Verma, <b>Santosh Kumar Vipparthi</b>, Girdhari Singh</h5>
+                  <p><a href="#" target="_blank">"AffectiveNet: Affective-Motion Feature Learning for Micro Expression Recognition"</a>, IEEE MultiMedia, 2020 <b>(<a href="#" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J14]</b> Monu Verma, <b>Santosh Kumar Vipparthi</b>, Girdhari Singh, Subrahmanyam Murala</h5>
+                  <p><a href="https://ieeexplore.ieee.org/document/8844867/" target="_blank">"LEARNet: Dynamic Imaging Network for Micro Expression Recognition"</a>, IEEE Transactions on Image Processing, vol. 29, pp. 1618-1627, 2019 <b>(<a href="https://ieeexplore.ieee.org/document/8844867/" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C14]</b> Murari Mandal, Lav Kush Kumar, <b>Santosh Kumar Vipparthi</b></h5>
+                  <p><a href="https://dl.acm.org/doi/10.1145/3394171.3413934" target="_blank">"MOR-UAV: A Benchmark Dataset and Baselines for Moving Object Recognition in UAV Videos"</a>, <b>ACMMM-2020</b>, Seattle, United States, 2020 <span class="badge badge-success">Core A*</span> <b>(<a href="https://dl.acm.org/doi/10.1145/3394171.3413934" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C13]</b> Murari Mandal, Lav Kush Kumar, Mahipal Singh Saran, <b>Santosh Kumar Vipparthi</b></h5>
+                  <p><a href="http://openaccess.thecvf.com/content_WACV_2020/html/Mandal_MotionRec_A_Unified_Deep_Framework_for_Moving_Object_Recognition_WACV_2020_paper.html" target="_blank">"MotionRec: A Unified Deep Framework for Moving Object Recognition"</a>, <b>WACV-2020</b>, Snowmass Village, Colorado, US, 2020 <span class="badge badge-success">Core A</span> <b>(<a href="http://openaccess.thecvf.com/content_WACV_2020/html/Mandal_MotionRec_A_Unified_Deep_Framework_for_Moving_Object_Recognition_WACV_2020_paper.html" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C12]</b> Monu Verma, <b>Santosh Kumar Vipparthi</b>, Girdhari Singh</h5>
+                  <p><a href="https://arxiv.org/ftp/arxiv/papers/2005/2005.07991.pdf" target="_blank">"Non-Linearities Improve OrigiNet based on Active Imaging for Micro Expression Recognition"</a>, <b>IJCNN-2020</b>, Glasgow, United Kingdom, 2020 <span class="badge badge-info">Core B</span> <b>(<a href="#" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C11]</b> Gopa Bhomik, Monu Verma, M. C. Govil, <b>Santosh Kumar Vipparthi</b></h5>
+                  <p><a href="#" target="_blank">"EXTRA: An extended radial mean response pattern for hand gesture recognition"</a>, ICCSP, Madras, INDIA, 2020 <b>(<a href="#" target="_blank">PDF</a>)</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Year 2019 -->
+          <div class="card">
+            <div class="card-header" id="heading2019">
+              <h4 data-toggle="collapse" data-target="#collapse2019" aria-expanded="false" aria-controls="collapse2019">
+                2019
+              </h4>
+            </div>
+            <div id="collapse2019" class="collapse" aria-labelledby="heading2019" data-parent="#publicationsAccordion">
+              <div class="card-body">
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J13]</b> Murari Mandal, Vansh Dhar, Abhishek Mishra, <b>Santosh Kumar Vipparthi</b></h5>
+                  <p><a href="https://ieeexplore.ieee.org/document/8894435" target="_blank">"3DFR: A Swift 3D Feature Reductionist Framework for Scene Independent Change Detection"</a>, IEEE Signal Processing Letters, vol. 26, no. 12, pp. 1882-1886, 2019 <b>(<a href="https://ieeexplore.ieee.org/document/8894435" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J12]</b> Murari Mandal, Manal Shah, Prashant Meena, Sanhita Devi, <b>Santosh Kumar Vipparthi</b></h5>
+                  <p><a href="https://ieeexplore.ieee.org/document/8755462/" target="_blank">"AVDNet: A SmallSized Vehicle Detection Network for Aerial Visual Data"</a>, IEEE Geoscience and Remote Sensing Letters, 2019 <b>(<a href="https://ieeexplore.ieee.org/document/8755462/" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J11]</b> Murari Mandal, Monu Verma, Sonakshi Mathur, <b>Santosh Vipparthi</b>, Subrahmanyam Murala, Kranthi Deveerasetty</h5>
+                  <p><a href="https://digital-library.theiet.org/content/journals/10.1049/iet-ipr.2018.5683" target="_blank">"RADAP: Regional Adaptive Affinitive Patterns with Logical Operators for Facial Expression Recognition"</a>, IEEE/IET Image Processing, 2019 <b>(<a href="https://digital-library.theiet.org/content/journals/10.1049/iet-ipr.2018.5683" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J10]</b> Monu Verma, <b>Santosh Kumar Vipparthi</b>, Girdhari Singh</h5>
+                  <p><a href="https://ieeexplore.ieee.org/document/8766893" target="_blank">"HiNet: Hybrid Inherited Feature Learning Network for Facial Expression Recognition"</a>, IEEE Letters of the Computer Society, 2019 <b>(<a href="https://ieeexplore.ieee.org/document/8766893" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J9]</b> Maheep Singh, Mahesh C. Govil, Emmanuel S. Pilli, <b>Santosh Kumar Vipparthi</b></h5>
+                  <p><a href="https://ieeexplore.ieee.org/document/8863240" target="_blank">"SOD-CED: salient object detection for noisy images using convolution encoder–decoder"</a>, IEEE/IET Computer Vision, 2019 <b>(<a href="https://ieeexplore.ieee.org/document/8863240" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C10]</b> Murari Mandal, Manal Shah, Prashant Meena, <b>Santosh Kumar Vipparthi</b></h5>
+                  <p><a href="https://ieeexplore.ieee.org/document/8803262" target="_blank">"SSSDet: Simple Short and Shallow Network for Resource Efficient Vehicle Detection in Aerial Scenes"</a>, <b>ICIP-2019</b>, Taipei, Taiwan, 2019 <span class="badge badge-info">Core B</span> <b>(<a href="https://ieeexplore.ieee.org/document/8803262" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C9]</b> Kuldeep Marotirao Biradar, Ayushi Gupta, Murari Mandal, <b>Santosh Kumar Vipparthi</b></h5>
+                  <p><a href="http://openaccess.thecvf.com/content_CVPRW_2019/papers/AI%20City/Biradar_Challenges_in_Time-Stamp_Aware_Anomaly_Detection_in_Traffic_Videos_CVPRW_2019_paper.pdf" target="_blank">"Challenges in Time-Stamp Aware Anomaly Detection in Traffic Videos"</a>, <b>CVPRW-2019</b>, Long Beach, California, US, 2019 <b>(<a href="http://openaccess.thecvf.com/content_CVPRW_2019/papers/AI%20City/Biradar_Challenges_in_Time-Stamp_Aware_Anomaly_Detection_in_Traffic_Videos_CVPRW_2019_paper.pdf" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C8]</b> Monu Verma, Prafulla Saxena, <b>Santosh Kumar Vipparthi</b>, Girdhari Singh, S. K. Nagar</h5>
+                  <p><a href="https://www.researchgate.net/publication/337387469_DeFINet_PORTABLE_CNN_NETWORK_FOR_FACIAL_EXPRESSION_RECOGNITION" target="_blank">"DeFINet: PORTABLE CNN NETWORK FOR FACIAL EXPRESSION RECOGNITION"</a>, IEEE International Conference on Information and Communication Technology for Competitive Strategies, Udaipur, INDIA, 2019 <b>(<a href="https://www.researchgate.net/publication/337387469_DeFINet_PORTABLE_CNN_NETWORK_FOR_FACIAL_EXPRESSION_RECOGNITION" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C7]</b> Shivangi Dwivedi, Murari Mandal, Shekhar Yadav, <b>Santosh Kumar Vipparthi</b></h5>
+                  <p><a href="https://link.springer.com/content/pdf/10.1007/978-981-15-4018-9_32.pdf" target="_blank">"3D CNN with Localized Residual Connections for Hyperspectral Image Classification"</a>, IEEE International Conference on Computer Vision and Image Processing (CVIP), Jaipur, India, 2019 <b>(<a href="https://link.springer.com/content/pdf/10.1007/978-981-15-4018-9_32.pdf" target="_blank">PDF</a>)</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Year 2018 -->
+          <div class="card">
+            <div class="card-header" id="heading2018">
+              <h4 data-toggle="collapse" data-target="#collapse2018" aria-expanded="false" aria-controls="collapse2018">
+                2018
+              </h4>
+            </div>
+            <div id="collapse2018" class="collapse" aria-labelledby="heading2018" data-parent="#publicationsAccordion">
+              <div class="card-body">
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J8]</b> Murari Mandal, <b>Santosh Kumar Vipparthi</b>, Mallika Chaudhary, Subramanian Murala, Anil Balaji Gonde, S. K. Nagar</h5>
+                  <p><a href="https://digital-library.theiet.org/content/journals/10.1049/iet-cvi.2018.5206" target="_blank">"ANTIC: ANTithetic Isomeric Cluster Patterns for Medical Image Retrieval and Change Detection"</a>, IEEE/IET Computer Vision, 2018 <b>(<a href="https://digital-library.theiet.org/content/journals/10.1049/iet-cvi.2018.5206" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C6]</b> Murari Mandal, Prafulla Saxena, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala</h5>
+                  <p><a href="https://ieeexplore.ieee.org/document/8545504" target="_blank">"CANDID: Robust Change Dynamics and Deterministic Update Policy for Dynamic Background Subtraction"</a>, <b>ICPR-2018</b>, Beijing, China, 2018 <span class="badge badge-info">Core B</span> <b>(<a href="https://ieeexplore.ieee.org/document/8545504" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C5]</b> Monu Verma, Prafulla Saxena, <b>Santosh Kumar Vipparthi</b>, Girdhari Singh</h5>
+                  <p><a href="https://ieeexplore.ieee.org/abstract/document/8616256" target="_blank">"QUEST: Quadriletral Senary bit Pattern for Facial Expression Recognition"</a>, <b>SMC-2018</b>, Miyazaki, Japan, 2018 <span class="badge badge-info">Core B</span> <b>(<a href="https://ieeexplore.ieee.org/abstract/document/8616256" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C4]</b> Monu Verma, Jaspreet Kaur Bhui, <b>Santosh Kumar Vipparthi</b>, Girdhari Singh</h5>
+                  <p><a href="https://arxiv.org/abs/1904.06658" target="_blank">"EXPERTNet: Exigent Features Preservative Network for Facial Expression Recognition"</a>, <b>ICVGIP-2018</b>, Hyderabad, India, 2018 <b>(<a href="https://arxiv.org/abs/1904.06658" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C3]</b> Monu Verma, <b>Santosh Kumar Vipparthi</b>, Girdhari Singh</h5>
+                  <p><a href="https://arxiv.org/abs/1811.10261" target="_blank">"Region Based Extensive Response Index Pattern for Facial Expression Recognition"</a>, IEEE International Conference on Communication, Computing and Internet of Things, 2018 <b>(<a href="https://arxiv.org/abs/1811.10261" target="_blank">PDF</a>)</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Year 2017 -->
+          <div class="card">
+            <div class="card-header" id="heading2017">
+              <h4 data-toggle="collapse" data-target="#collapse2017" aria-expanded="false" aria-controls="collapse2017">
+                2017
+              </h4>
+            </div>
+            <div id="collapse2017" class="collapse" aria-labelledby="heading2017" data-parent="#publicationsAccordion">
+              <div class="card-body">
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C2]</b> Sonakshi Mathur, Mallika Chaudhary, Hemant Verma, Murari Mandal, <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala</h5>
+                  <p><a href="https://ieeexplore.ieee.org/document/8487542/" target="_blank">"Multichannel Distributed Local Pattern for Content Based Indexing and Retrieval"</a>, <b>INDICON-2017</b>, Roorkee, 2017 <b>(<a href="https://ieeexplore.ieee.org/document/8487542/" target="_blank">PDF</a>)</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Year 2016 -->
+          <div class="card">
+            <div class="card-header" id="heading2016">
+              <h4 data-toggle="collapse" data-target="#collapse2016" aria-expanded="false" aria-controls="collapse2016">
+                2016
+              </h4>
+            </div>
+            <div id="collapse2016" class="collapse" aria-labelledby="heading2016" data-parent="#publicationsAccordion">
+              <div class="card-body">
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J7]</b> <b>Santosh Kumar Vipparthi</b>, Subramanian Murala, Anil Balaji Gonde, Q. M. Jonathan Wu</h5>
+                  <p><a href="https://digital-library.theiet.org/content/journals/10.1049/iet-cvi.2015.0035" target="_blank">"Local Directional Mask Maximum Edge Patterns for Image Retrieval and Face Recognition"</a>, IEEE/IET Computer Vision, 2016 <b>(<a href="https://digital-library.theiet.org/content/journals/10.1049/iet-cvi.2015.0035" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card conference" data-type="conference">
+                  <h5><b>[C1]</b> Anil Balaji Gonde, Subrahmanyam Murala, <b>Santosh Kumar Vipparthi</b>, Rudra Prakash Maheshwari, R Balasubramanian</h5>
+                  <p><a href="https://link.springer.com/chapter/10.1007/978-981-10-2107-7_45" target="_blank">"3D Local Transform Patterns: A New Feature Descriptor for Image Retrieval"</a>, <b>CVIP-2016</b>, Roorkee, 2016 <b>(<a href="https://link.springer.com/chapter/10.1007/978-981-10-2107-7_45" target="_blank">PDF</a>)</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Year 2014 -->
+          <div class="card">
+            <div class="card-header" id="heading2014">
+              <h4 data-toggle="collapse" data-target="#collapse2014" aria-expanded="false" aria-controls="collapse2014">
+                2014
+              </h4>
+            </div>
+            <div id="collapse2014" class="collapse" aria-labelledby="heading2014" data-parent="#publicationsAccordion">
+              <div class="card-body">
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J6]</b> <b>Santosh Kumar Vipparthi</b>, S. K. Nagar</h5>
+                  <p><a href="https://www.sciencedirect.com/science/article/pii/S0957417414003935" target="_blank">"Expert Image Retrieval system using Directional Local Motif XOR Patterns"</a>, Expert Systems with Applications, Elsevier, 2014 <b>(<a href="https://www.sciencedirect.com/science/article/pii/S0957417414003935" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J5]</b> <b>Santosh Kumar Vipparthi</b>, Subrahmanyam Murala, S. K. Nagar, A. B. Gonde</h5>
+                  <p><a href="https://www.sciencedirect.com/science/article/pii/S0925231215005317" target="_blank">"Local Gabor Maximum Edge Position Octal Patterns for Image Indexing and Retrieval"</a>, Neurocomputing, Elsevier, 2014 <b>(<a href="https://www.sciencedirect.com/science/article/pii/S0925231215005317" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J4]</b> <b>Santosh Kumar Vipparthi</b>, S. K. Nagar</h5>
+                  <p><a href="https://www.sciencedirect.com/science/article/pii/S0045790614001232" target="_blank">"Multi-joint histogram based modelling for image indexing and retrieval"</a>, Computers & Electrical Engineering, Elsevier, 2014 <b>(<a href="https://www.sciencedirect.com/science/article/pii/S0045790614001232" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J3]</b> <b>Santosh Kumar Vipparthi</b>, S. K. Nagar</h5>
+                  <p><a href="https://www.sciencedirect.com/science/article/pii/S003040261500217X" target="_blank">"Dual directional Multi-Motif XOR Patterns: A new Descriptor for Image Indexing and Retrieval"</a>, International Journal for Light and Electron Optics, Elsevier <b>(<a href="https://www.sciencedirect.com/science/article/pii/S003040261500217X" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J2]</b> <b>Santosh Kumar Vipparthi</b>, S. K. Nagar</h5>
+                  <p><a href="https://hcis-journal.springeropen.com/articles/10.1186/s13673-014-0006-x" target="_blank">"Colored Directional Local Quinary Patterns for Multimedia Image Indexing and Retrieval"</a>, Human-centric Computing and Information Sciences, Springer, 2014 <b>(<a href="https://hcis-journal.springeropen.com/articles/10.1186/s13673-014-0006-x" target="_blank">PDF</a>)</b></p>
+                </div>
+                <div class="publication-card journal" data-type="journal">
+                  <h5><b>[J1]</b> <b>Santosh Kumar Vipparthi</b>, S. K. Nagar</h5>
+                  <p><a href="https://link.springer.com/article/10.1007/s40031-014-0153-5" target="_blank">"Integration of Color and Local Derivative Pattern Features for Content-Based Image Indexing and Retrieval"</a>, Journal of the Institution of Engineers (India): Series B, Springer, 2014 <b>(<a href="https://link.springer.com/article/10.1007/s40031-014-0153-5" target="_blank">PDF</a>)</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
   </div>
 
   <!-- Back-to-top button -->
-  <a role="button" id="topper" data-toggle="tooltip" data-placement="top" title="Top" class="btn scroll-link" href="#top"><i class="fa fa-fw fa-2x fa-caret-up" aria-hidden="true"></i></a>
+  <a href="#top" class="back-to-top" title="Top"><i class="fa fa-chevron-up"></i></a>
 
-  <!-- footer include -->
+  <!-- Footer include -->
   <div w3-include-html="footer.html"></div>
 
   <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 
-  <!-- Bootstrap JS Library -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
-  <!-- html file include script | used for navbar and footer -->
+  <!-- W3 Include HTML -->
   <script src="js/w3data.js"></script>
   <script>
-    w3IncludeHTML()
+    w3IncludeHTML();
   </script>
 
-  <!-- Local scripts -->
-  <script src="js/main.js"></script>
-
+  <!-- Publication Filter Script -->
   <script>
     $(document).ready(function() {
-
+      // Navbar active state
       $("#navbar-include").load("navbar.html", function() {
-
         $("#home").removeClass("active");
         $("#research").addClass("active");
+      });
 
+      // Filter publications
+      $('.filter-btn').click(function() {
+        var filter = $(this).data('filter');
+        $('.filter-btn').removeClass('btn-primary').addClass('btn-secondary');
+        $(this).removeClass('btn-secondary').addClass('btn-primary');
+
+        if (filter === 'all') {
+          $('.publication-card').show();
+        } else {
+          $('.publication-card').hide();
+          $('.publication-card[data-type="' + filter + '"]').show();
+        }
+      });
+
+      // Smooth scroll for back-to-top
+      $('.back-to-top').click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 500);
       });
     });
   </script>
-
 </body>
-
 </html>
