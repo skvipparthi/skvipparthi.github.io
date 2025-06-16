@@ -44,9 +44,33 @@
       font-family: 'Open Sans', sans-serif;
       background-color: #f8f9fa;
       color: #333;
+      padding-top: 70px; /* Adjust for fixed navbar */
     }
     #main-container {
       margin-top: 20px;
+    }
+    .navbar {
+      background-color: #343a40;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .navbar-brand {
+      font-weight: 600;
+      color: #fff !important;
+      font-size: 1.5rem;
+    }
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      font-size: 1rem;
+      padding: 10px 15px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .navbar-nav .nav-link:hover {
+      background-color: #495057;
+      border-radius: 5px;
+    }
+    .navbar-nav .active .nav-link {
+      background-color: #007bff;
+      border-radius: 5px;
     }
     .card {
       background: #fff;
@@ -119,8 +143,31 @@
   </style>
 </head>
 <body>
-  <!-- Navbar include -->
-  <div id="navbar-include"></div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Dr. Santosh Kumar Vipparthi</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active" id="about">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item" id="publications">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </li>
+          <li class="nav-item" id="teaching">
+            <a class="nav-link" href="teaching.html">Teaching</a>
+          </li>
+          <li class="nav-item" id="projects">
+            <a class="nav-link" href="projects.html">Project Details</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <div class="spacer-div-3 hidden-xs"></div>
 
@@ -230,9 +277,7 @@
   <script>
     $(document).ready(function() {
       // Navbar active state
-      $("#navbar-include").load("navbar.html", function() {
-        $("#about").addClass("active");
-      });
+      $("#about").addClass("active");
 
       // Smooth scroll for back-to-top
       $('.back-to-top').click(function(e) {
